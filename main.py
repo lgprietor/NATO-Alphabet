@@ -1,6 +1,14 @@
 import pandas
 
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
+#
+# letter = data.letter
+#
+# print(letter)
+#
+# row_D = data[data.letter == "D"]
+# print(row_D)
+# print(row_D.index*2)
 
 dictionary = {row.letter:row.code for (index,row) in data.iterrows()}
 # print(dictionary)
